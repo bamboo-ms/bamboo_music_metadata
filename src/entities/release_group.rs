@@ -1,9 +1,11 @@
 use super::{artist::Artist, release::Release};
 use crate::identifier::Identifier;
+use serde::{Deserialize, Serialize};
 
 // "A release group... is used to group several different releases into a single logical entity.
 // Every release belongs to one, and only one, release group." [1]
 
+#[derive(Serialize, Deserialize)]
 enum Type {
     Album,
     Single,
@@ -13,6 +15,7 @@ enum Type {
     Other,
 }
 
+#[derive(Serialize, Deserialize)]
 pub struct ReleaseGroup {
     identifiers: Vec<Identifier>,
     // "The title of a release group is usually very similar, if not the same, as the titles of the

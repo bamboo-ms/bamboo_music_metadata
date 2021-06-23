@@ -1,8 +1,10 @@
 // Information required to uniquely identify the media in one or more databases
 
 use bamboo_metadata::id_provider::IdProvider;
+use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
+#[derive(Serialize, Deserialize)]
 pub enum Identifier {
     // local Bamboo database ID
     // Locally used to identify entities for music
