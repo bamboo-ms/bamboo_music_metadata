@@ -10,17 +10,17 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize)]
 pub struct Release {
-    identifiers: Vec<Identifier>,
-    title: String,
+    pub identifiers: Vec<Identifier>,
+    pub title: String,
     // "The artist(s) that the release is primarily credited to, as credited on the release." [1]
-    artists: Vec<Artist>,
+    pub artists: Vec<Artist>,
     // "The date the release was issued." [1]
-    date: NaiveDate,
+    pub date: NaiveDate,
     // "The country the release was issued in." [1]
-    country: CountryCode,
+    pub country: CountryCode,
     // "The Language a release's track list is written in." [1]
-    language: Language,
-    works: Vec<Work>,
+    pub language: Language,
+    pub works: Vec<Work>,
 }
 
 // [1] https://wiki.musicbrainz.org/Release

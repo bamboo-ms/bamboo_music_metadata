@@ -7,10 +7,10 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize)]
 pub struct Work {
-    identifiers: Vec<Identifier>,
-    name: String,
-    artists: Vec<Artist>,
-    tracks: Vec<Track>,
+    pub identifiers: Vec<Identifier>,
+    pub name: String,
+    pub artists: Vec<Artist>,
+    pub tracks: Vec<Track>,
 }
 
 // [1] https://wiki.musicbrainz.org/Work

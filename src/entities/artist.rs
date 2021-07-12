@@ -7,12 +7,12 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize)]
 pub struct Artist {
-    identifiers: Vec<Identifier>,
+    pub identifiers: Vec<Identifier>,
     // "The official name of an artist, be it a person or a band" [1]
-    name: String,
+    pub name: String,
     // "Aliases are used to store alternate names or misspellings." [1]
-    aliases: Vec<String>,
-    release_groups: Vec<ReleaseGroup>,
+    pub aliases: Vec<String>,
+    pub release_groups: Vec<ReleaseGroup>,
 }
 
 // [1] https://wiki.musicbrainz.org/Artist

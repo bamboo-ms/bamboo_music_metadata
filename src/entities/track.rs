@@ -9,7 +9,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize)]
 pub struct Track {
-    identifiers: Vec<Identifier>,
-    name: String,
-    artists: Vec<Artist>,
+    pub identifiers: Vec<Identifier>,
+    pub name: String,
+    pub artists: Vec<Artist>,
 }
