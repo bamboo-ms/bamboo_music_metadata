@@ -1,4 +1,4 @@
-use super::{artist::Artist, work::Work};
+use super::work::Work;
 use crate::identifier::Identifier;
 use bamboo_metadata::language::Language;
 use chrono::NaiveDate;
@@ -8,12 +8,13 @@ use serde::{Deserialize, Serialize};
 // "A MusicBrainz release represents the unique release (i.e. issuing) of a product on a specified
 // date with specific release information such as the country, label, barcode, and packing."
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug)]
+#[serde(rename_all = "camelCase")]
 pub struct Release {
     pub identifiers: Vec<Identifier>,
     pub title: String,
     // "The artist(s) that the release is primarily credited to, as credited on the release." [1]
-    pub artists: Vec<Artist>,
+    pub artists: Vec<Identifier>,
     // "The date the release was issued." [1]
     pub date: NaiveDate,
     // "The country the release was issued in." [1]

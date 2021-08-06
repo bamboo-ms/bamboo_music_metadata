@@ -4,7 +4,8 @@ use bamboo_metadata::id_provider::IdProvider;
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug)]
+#[serde(rename_all = "camelCase")]
 pub enum Identifier {
     // local Bamboo database ID
     // Locally used to identify entities for music

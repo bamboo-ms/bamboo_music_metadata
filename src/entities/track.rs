@@ -1,4 +1,3 @@
-use super::artist::Artist;
 use crate::identifier::Identifier;
 use serde::{Deserialize, Serialize};
 
@@ -7,9 +6,10 @@ use serde::{Deserialize, Serialize};
 // the same song, but the Track will only contain a single UUID that is shared with all of those
 // files.
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug)]
+#[serde(rename_all = "camelCase")]
 pub struct Track {
     pub identifiers: Vec<Identifier>,
     pub name: String,
-    pub artists: Vec<Artist>,
+    pub artists: Vec<Identifier>,
 }

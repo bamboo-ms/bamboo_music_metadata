@@ -1,0 +1,79 @@
+{
+  "identifiers": [
+    {
+      "isni": "0000 0004 6748 058X"
+    },
+    {
+      "ipi": "00792187700"
+    },
+    {
+      "mbid": "f4abc0b5-3f7a-4eff-8f78-ac078dbce533"
+    }
+  ],
+  "name": "Billie Eilish",
+  "aliases": [],
+  "releaseGroups": [
+    {
+      "identifiers": [
+        {
+          "mbid": "72375978-a9a1-4254-b957-85565c716b7e"
+        }
+      ],
+      "title": "When We All Fall Asleep, Where Do We Go?",
+      "artists": [
+        {
+          "mbid": "f4abc0b5-3f7a-4eff-8f78-ac078dbce533"
+        }
+      ],
+      "type": "album",
+      "releases": [
+        {
+          "identifiers": [
+            {
+              "mbid": "1d8f0dc1-3e99-4f18-af60-588c88d10ca9"
+            }
+          ],
+          "title": "When We All Fall Asleep, Where Do We Go?",
+          "artists": [
+            {
+              "mbid": "f4abc0b5-3f7a-4eff-8f78-ac078dbce533"
+            }
+          ],
+          "date": "2019-03-29",
+          "country": "US",
+          "language": "Eng",
+          "works": [
+            {
+              "identifiers": [
+                {
+                  "mbid": "2942b400-fb80-4690-a698-433d301724ea"
+                }
+              ],
+              "name": "!!!!!!!",
+              "artists": [
+                {
+                  "mbid": "f4abc0b5-3f7a-4eff-8f78-ac078dbce533"
+                }
+              ],
+              "tracks": [
+                {
+                  "identifiers": [
+                    {
+                      "mbid": "2942b400-fb80-4690-a698-433d301724ea"
+                    }
+                  ],
+                  "name": "!!!!!!!",
+                  "artists": [
+                    {
+                      "mbid": "f4abc0b5-3f7a-4eff-8f78-ac078dbce533"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
